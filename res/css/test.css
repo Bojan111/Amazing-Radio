@@ -1,0 +1,474 @@
+﻿    body {
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-image: url(../images/john-coltrane-cannonball-adderley-miles-davis-and-bill-evans-making-kind-of-blue-wallpaper.jpg);
+        font-family: "Lato",sans-serif;
+
+            color: var(--navigator);
+            font-size: 15px;
+            line-height: 1.8em;
+
+    }
+    .radio-wz {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 100;
+        background: #000;
+         width: 100%;
+         height: 64px;
+        text-decoration: none;
+    }
+    .radio-wz p {
+        display: inline;
+        color: #fff;
+        font-size: 15px;
+        position: absolute;
+        bottom: 20px;
+        font-weight: bolder;
+        left: 300px
+    }
+    .volume-bar {
+        position: relative;
+        overflow: hidden;
+        background: red;
+        width: 90px;
+        height: 12px;
+        cursor: pointer;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        float: right;
+        right: 231px;
+        top: 16px;
+        border: 5px solid #111;
+    }
+    
+    .current-time {
+        font-size: 24px;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 390px;
+    }
+
+
+
+    a {
+        font-family: sans-serif;
+    }
+    #wrap {   
+        width: 80%;
+        margin: 20px auto 50px auto;
+    }
+    #pageheader {
+        margin-bottom: 30px;
+    }
+    .header {
+        background-color: var(--transparent);
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .ads img {
+        margin:10px;
+    }
+    .ad {
+        /*background-color: red;*/
+        width: 728px;
+        height: 90px;
+        margin-right: 20px;
+    }
+    /*==================================== navigator ============================================*/
+    .navigator {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--navigator);
+        height: 50px;
+    }
+
+    .navigator ul li {
+        float: left;
+        margin: 10px;
+    }
+    .navigator ul li a {
+        padding: 10px;
+    }
+
+    .navigator .home a {
+        background-color: #fff;
+        padding: 10px;
+        color: black;
+    }
+
+    .navigator ul li a:hover{
+        background: var(--primary);
+    }
+    .navigator ul li a {  
+        text-decoration: none;
+        color:#fff;
+    }
+    .navigator form {
+        float: right;
+        margin: 0 10px;
+    }
+    .navigator input, button {
+        padding: 10px;
+    }
+    .navigator button {
+        background: #eb3d1d;
+        border: none;
+        opacity: 1.5;
+        transition: 0.3s;
+    }
+    .navigator button:hover {
+        background: var(--navigator);
+        color: #fff;
+        opacity: 2;
+    }
+    /*==================================== main ============================================*/
+    main {
+        background-color: var(--transparent);
+        overflow: hidden;
+        padding: 10px;
+    }
+    .slider {
+        padding: 10px;
+        background-color: var(--transparent);
+    }
+    .sidebar section {
+        position: absolute;
+        bottom: 1890px;
+    }
+    .slider img {
+        width: 100%;
+    }
+    .slider ul {
+        position: relative;
+        height: 320px;
+    }
+    .slider ul li {
+        overflow: hidden;
+        position: absolute;
+        border: 10px solid #fff;
+        right: 0;
+        left: 0;
+        height: 300px;
+
+    }
+
+
+    .slider p {
+        position: absolute;
+        bottom: 50px;
+        left: 100px;
+        font-size: 40px;
+        color: white;
+        font-weight: bolder;
+    }
+    /*========================================================*/
+
+    .container  {
+        float: left;
+        width: 70%;
+    }
+
+    .latest article {
+        
+        border: 1px solid white;
+        background-color: white;
+        padding: 15px 20px;
+        border: 1px solid black;
+        background-color: white;
+        margin: 20px 0 0 5px;
+        height: 400px;
+
+    }
+    .latest ul {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .latest li {
+        text-align: center;
+        
+    }
+    h2 {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 24px;
+        color: #fff;
+        padding: 5px 0 5px 0;
+        line-height: 25px;
+        margin: 20px 0 10px 0;
+    }
+    span {
+        font-weight: 300;
+        color: white;
+        
+    }
+
+    .artists h3  {
+        margin:10px 0 15px 0;
+        font-size: 20px;
+    }
+    .artists a {
+        color:var(--navigator);
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .artists a:hover {
+        color: #eb3d1d;
+    }
+    .artists img {
+        width: 100%;
+        height: 170px;
+        opacity: .7 !important;
+    }
+    .list ul {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        
+    }
+    .list article {
+        
+        padding: 16px;
+        background-color: white;
+        
+    }
+    .list a {
+        text-decoration: none;
+        padding: 5px 5px 5px 10px;
+        border-bottom: 3px solid #bbb;
+        display: block;
+        color: #1b1b1b;
+        background: #eee;
+        opacity: 0.7;
+        transition: 0.3s;
+        
+    }
+    .list a:hover {
+        opacity: 1;
+    }
+    .list img {
+        width: 212px;
+        height: 160px;
+        opacity: .7 !important;
+    }
+    .artists ul {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .artists li {
+        background-color: white;
+        height: 460px;
+        margin: 5px 5px 5px 0;
+        padding-top: 10px;
+        padding: 10px;
+        position: relative;
+    }
+
+    h3 {
+        
+        font-size: 20px;
+    }
+
+    .artists a {
+        text-decoration: none;
+        color: var(--navigator);
+    }
+
+    .autor, time {
+        position: absolute;
+        bottom: 10px;
+        margin-bottom: 0;
+    }
+
+    .autor {
+        left: 20px;
+    }
+    .autor::before {
+        font-family:'Material Icons';
+        content:"person";
+    }
+    time {
+        right: 20px;
+    }
+    time::before {
+        content:"date_range";
+        font-family:'Material Icons';
+        display: block;
+        float: left;
+        margin-right: 2px;
+    }
+    aside {
+        float: right;
+        width: 30%;
+    }
+
+    aside h2 {
+        padding-left: 6px;
+    }
+    .widget {
+        width:311px;
+        height: 40px;
+        background: white;
+        margin-bottom: 40px;
+        margin-left: 7px;
+        margin-top: 14px;
+    }
+    .clear{
+        clear: both;
+    }
+
+    .list a {
+        font-size: 15px;
+        font-weight: 600;
+        height: 21px;
+        overflow: hidden;
+        display: block;
+    }
+    footer {
+        clear: both;
+        display: grid;
+        grid-template-columns: 24% 24% 24% 24%;
+        grid-gap: 1% 14px;
+        margin: 30px auto 0 auto;
+        background: rgba(34,34,47,.95);
+        padding:10px;
+    }
+
+    footer p {
+        color: #fff;
+    }
+    footer div h3 {
+        padding-bottom:15px;
+    }
+    footer h2 {
+       font-size: 20px;
+    }
+
+    footer div {
+    display: flex;
+
+    }
+    .list3 li  {
+        margin: 0 0 10px 0;
+    }
+    .friend li {
+        margin: 0 0 10px;
+    }
+    footer a {
+        text-decoration: none;
+        color: #fff;
+    }
+    /*===========================================*/
+    .news {
+        position: relative;
+    }
+    article {
+        padding: 10px;
+        background-color: #fff;
+        padding-bottom: 25px;
+    }
+    .pictures {
+        width: 100%;
+        height: 360px;
+    }
+    h3 {
+        font-weight: 600;
+        line-height: 30px;
+        margin-bottom: 7px;
+        margin-top: 7px;
+        font-size: 22px;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+    blockquote {
+        margin: 20px;
+        font-style: italic;
+        border-left: 3px solid #bdbdbd;
+        padding-left: 10px;
+    }
+    blockquote p img {
+        font-size: 15px;
+        line-height: 1.8em;
+    }
+    .images {
+        width: 300px;
+        height: 230px;
+        float: right;
+        margin: 5px 0 20px 20px;
+        
+    }
+  
+    .images1 {
+        width: 300px;
+        height: 290px;
+        float: right;
+        margin: 5px 0 20px 20px;
+    }
+    /*======================================interviews========================*/
+
+    .interviews article {
+        background-color: #fff;
+        padding: 10px;
+        
+    }
+    .interviews section {
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    .interviews tr {
+        font-size: 14px;
+        cursor: default;    
+    }
+    .interviews td {
+        float: left;
+        background: #eee;
+        padding: 5px 72px 5px 10px;
+        width: 105px;
+        margin-right: 5px;
+        display: inline-block;
+        margin: 0 5px 5px 5px;
+    }
+    .interviews td a {
+        text-decoration: none;
+        color: #1d1d1b
+    }
+    .interviews article img {
+        width: 300px;
+        height: 210px;
+        float: left;
+        margin-right: 10px;
+    }
+    .interviews  p {
+        color:#1d1d1b;
+    }
+
+
+    .bold {
+        font-weight: bold;
+        
+    }
+    ul.station-list{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    } 
+    ul.station-list li {
+        padding: 5px;
+        background-color: #fff;
+        margin: 5px;
+    }
+    ul.station-list img {
+       width: 100%;
+       display: block; 
+       
+    }
